@@ -1,0 +1,25 @@
+{
+  "version": "0.6.3",
+  "assets": {
+    "aarch64-darwin": {
+      "name": "celld-aarch64-apple-darwin.gz",
+      "hash": "sha256-Lfawg2k0XbjB+aXtzzkyzsqm+zX0ZYV1ptsX3yjCI3E="
+    },
+    "aarch64-linux": {
+      "name": "celld-aarch64-unknown-linux-gnu.gz",
+      "hash": "sha256-bWF8358EnkPKak43xMzl2ONTlcjoazccmE0yun2AO/U="
+    },
+    "x86_64-linux": {
+      "name": "celld-x86_64-unknown-linux-gnu.gz",
+      "hash": "sha256-UISgg0cs8DZVGn6sY/ok0iu5pWMjxRf2MgVyTBJ4MEc="
+    },
+    "LICENSE": {
+      "name": "LICENSE",
+      "hash": "sha256-z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA="
+    },
+    "NOTICE": {
+      "name": "NOTICE",
+      "hash": "sha256-YjdvM8yRuPPfDkZ0MoU7FJbXNC2Kiq1bsxpv3rPQ1qg="
+    }
+  }
+}
