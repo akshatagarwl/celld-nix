@@ -23,6 +23,23 @@
         default = celld;
       });
 
+      apps = forAllSystems (pkgs: {
+        update = {
+          type = "app";
+          meta.description = "Bump celld to the latest release and refresh hashes";
+          program = nixpkgs.lib.getExe (
+            pkgs.writeShellApplication {
+              name = "celld-update";
+              runtimeInputs = [
+                pkgs.curl
+                pkgs.jq
+              ];
+              text = builtins.readFile ./pkgs/update.sh;
+            }
+          );
+        };
+      });
+
       checks = forAllSystems (pkgs: {
         inherit (self.packages.${pkgs.stdenv.hostPlatform.system}) celld;
         overlay = (pkgs.extend self.overlays.default).celld;
